@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require File.expand_path('../../lib/client', __FILE__)
+
+token = ARGV[0]
+project = ARGV[1]
+tag = ARGV.length > 2 ? ARGV[2] : "cfid"
+
+raise RuntimeError, "No token or project id on command line" unless token && project 
+
+puts "Processing update for: #{token} #{project} #{tag}"
+
+client = Client.new(token, project, tag)
+client.update
+
+
