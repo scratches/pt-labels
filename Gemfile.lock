@@ -12,7 +12,7 @@ GEM
       happymapper (>= 0.3.2)
       nokogiri (~> 1.4.3.1)
       rest-client (~> 1.6.0)
-    rack (1.4.1)
+    rack (1.6.13)
     rack-protection (1.2.0)
       rack
     rest-client (1.6.7)
